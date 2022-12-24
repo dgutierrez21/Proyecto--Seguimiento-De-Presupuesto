@@ -97,10 +97,7 @@ export default class SeguimientoPresupuesto {
 
     console.log(total);
 
-    const formatearTotal = new Intl.NumberFormat("es-CR", {
-      style: "currency",
-      currency: "CRC",
-    }).format(total);
+    const formatearTotal = this.formatearEntrada(total);
 
     this.root.querySelector(".total").textContent = formatearTotal;
   }
@@ -166,5 +163,14 @@ export default class SeguimientoPresupuesto {
 
     this.guardar();
     this.actualizarResumen();
+  }
+
+  formatearEntrada(total) {
+    const formatear = new Intl.NumberFormat("es-CR", {
+      style: "currency",
+      currency: "CRC",
+    }).format(total);
+
+    return formatear;
   }
 }
