@@ -110,3 +110,10 @@ body,
 .total {
   font-size: 25px;
 }
+
+.sin-soporte {
+  padding: 40vh 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
