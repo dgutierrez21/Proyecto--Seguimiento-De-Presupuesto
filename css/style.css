@@ -38,6 +38,7 @@ h1 {
 body,
 .seguimiento-presupuesto * {
   font-family: sans-serif;
+  font-size: 20px;
 }
 
 .seguimiento-presupuesto th {
@@ -53,8 +54,9 @@ body,
 .input,
 .eliminar-entrada {
   height: 30px;
-  font-size: 13px;
   padding: 0 10px;
+  font-size: 20px;
+  font-weight: bold;
   margin: 0;
 }
 
@@ -102,4 +104,9 @@ body,
 .resumen,
 .controles {
   text-align: right;
+}
+
+.resumen strong,
+.total {
+  font-size: 25px;
 }
