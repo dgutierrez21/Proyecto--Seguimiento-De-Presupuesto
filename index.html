@@ -9,6 +9,62 @@
     <title>Seguimiento De Presupuesto</title>
   </head>
   <body>
-    
+    <div id="app">
+      <h1>Seguimiento De Presupuesto</h1>
+      <table class="seguimiento-presupuesto">
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Descripción</th>
+            <th>Tipo</th>
+            <th>Cantidad</th>
+            <th></th>
+          </tr>
+        </thead>
+
+        <tbody class="entradas">
+          <tr>
+            <td>
+              <input type="date" class="input input-fecha" />
+            </td>
+            <td>
+              <input
+                type="text"
+                class="input input-descripcion"
+                placeholder="Agrega una descripción ( ej. salario. facturas. etc. )"
+              />
+            </td>
+            <td>
+              <select name="" id="" class="input input-tipo">
+                <option value="ingreso">Ingreso</option>
+                <option value="gasto">Gasto</option>
+              </select>
+            </td>
+            <td>
+              <input type="number" class="input input-cantidad" />
+            </td>
+            <td>
+              <button type="button" class="eliminar-entrada">&#10005;</button>
+            </td>
+          </tr>
+        </tbody>
+
+        <tbody>
+          <tr>
+            <td colspan="5" class="controles">
+              <button type="button" class="nueva-entrada">Nueva Entrada</button>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="5" class="resumen">
+              <strong>Total:</strong>
+              <span class="total">₡0.0</span>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
   </body>
 </html>
