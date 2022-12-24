@@ -23,3 +23,83 @@ img {
 button {
   cursor: pointer;
 }
+
+h1 {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.seguimiento-presupuesto {
+  border-collapse: collapse;
+  min-width: 750px;
+  margin: 0 auto;
+}
+
+body,
+.seguimiento-presupuesto * {
+  font-family: sans-serif;
+}
+
+.seguimiento-presupuesto th {
+  text-align: left;
+  padding: 10px 20px;
+  border-bottom: 2px solid #009578;
+}
+
+.seguimiento-presupuesto td {
+  padding: 5px;
+}
+
+.input,
+.eliminar-entrada {
+  height: 30px;
+  font-size: 13px;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.input {
+  border: 2px solid #b8b8b8;
+  border-radius: 5px;
+}
+
+.input:focus {
+  border-color: #bbbbbb;
+}
+
+.eliminar-entrada {
+  font-size: 15px;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  background: none;
+  border: none;
+  color: red;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.eliminar-entrada:hover {
+  background: rgba(255, 0, 0, 0.1);
+}
+
+.nueva-entrada {
+  font-weight: bold;
+  padding: 7px;
+  background-color: #009578;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  transition: background 0.3s;
+}
+
+.nueva-entrada:hover {
+  background-color: #016854;
+}
+
+.resumen,
+.controles {
+  text-align: right;
+}
